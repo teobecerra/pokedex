@@ -12,7 +12,7 @@ const pokeHeight = document.querySelector('.poke-height');
 const pokeListItems = document.querySelectorAll('.list-item');
 const prevButton = document.querySelector('.left-button');
 const nextButton = document.querySelector('.right-button');
-const downButton = document.querySelector('.d-pad__cell.bottom');
+const rightButton = document.querySelector('.d-pad__cell.right');
 const upButton = document.querySelector('.d-pad__cell.top');
 const leftButton = document.querySelector('.d-pad__cell.left');
 const screenImage = document.querySelector('.screen__image');
@@ -253,7 +253,7 @@ const handleListItemClick = (e) => {
   handleUpArrowClick();
 };
 
-const handleDownArrowClick = (e) => {
+const handleRightArrowClick = (e) => {
   screenImage.classList.add('hide');
   description.classList.add('hide');
   abilities.classList.remove('hide');
@@ -291,7 +291,7 @@ const handleLeftButtonClick = (e) => {
 // adding event listeners
 prevButton.addEventListener('click', handlePrevButtonClick);
 nextButton.addEventListener('click', handleNextButtonClick);
-downButton.addEventListener('click', handleDownArrowClick);
+rightButton.addEventListener('click', handleRightArrowClick);
 upButton.addEventListener('click', handleUpArrowClick);
 leftButton.addEventListener('click', handleLeftButtonClick);
 
